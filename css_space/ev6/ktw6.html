@@ -16,8 +16,12 @@
         #header{
             border: 2px solid #ccc;
             padding:20px;
-            
             margin-bottom: 3px;
+        }
+        #header p {
+            margin: 0px;
+            margin-inline-start: 90px;
+    
         }
         #nav{
             border: 2px solid #ccc;
@@ -52,26 +56,37 @@
             padding: 20px;
             padding-inline-start: 0px;
         }
+        #frame{
+            border: 1px solid #ccc;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            width: 884px;
+            height: 301px;
+        }
     </style>
 </head>
 <body>
     <div id="wrapper">
         <div id="header">
-            <a href="#">공지사항</a> |
-            <a href="#">게시판</a> |
-            <a href="#">FAQ</a> |
-            <a href="#">QnA</a>
+            <p>
+            <a href="info1.html" target="frame_target">공지사항</a> |
+            <a href="board1.html" target="frame_target">게시판</a> |
+            <a href="FAQ1.html" target="frame_target">FAQ</a> |
+            <a href="QnA1.html" target="frame_target">QnA</a>
+        </p>
         </div>
     <div id="nav">
         <ul id ="lead">
-            <li><a href="#">Java</a></li>
-            <li><a href="#">JSP</a></li>
-            <li><a href="#">Oracle</a></li>
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
+            <li><a href="Java1.html" target="frame_target">Java</a></li>
+            <li><a href="JSP1.html" target="frame_target">JSP</a></li>
+            <li><a href="Oracle1.html" target="frame_target">Oracle</a></li>
+            <li><a href="HTML1.html" target="frame_target">HTML</a></li>
+            <li><a href="CSS1.html" target="frame_target">CSS</a></li>
         </ul>
     </div>
-    <div id="content"> 공지사항입니다. </div>
+    <div id="content">
+        <iframe id="frame" src="info1.html" name="frame_target"></iframe>
+    </div>
     <div id="footer">Since 2021 </div>
     </div>
 </body>
